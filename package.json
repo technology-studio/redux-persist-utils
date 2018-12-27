@@ -32,7 +32,11 @@
       "pre-push": "yarn run git-hook"
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "@txo-peer-dep/log": "^1.0.1",
+    "@txo/functional": "^1.0.0",
+    "lodash.get": "^4.4.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@txo/babel-preset": "^1.0.0",
