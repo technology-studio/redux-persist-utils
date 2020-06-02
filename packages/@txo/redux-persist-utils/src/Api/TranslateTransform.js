@@ -19,7 +19,7 @@ export const createTranslateTransform = (
   rootReducerKey: string,
   inboundPathTranslateList: ?PathTranslate[],
   outboundPathTranslateList: ?PathTranslate[],
-  translateMode: TranslateMode = translateModes.WHITELIST
+  translateMode: TranslateMode = translateModes.WHITELIST,
 ) => ({
   in: <STATE: Object>(state: STATE, key: string): $Shape<STATE> =>
     rootReducerKey === key && inboundPathTranslateList ? translateTransform(state, inboundPathTranslateList, translateMode) : state,
