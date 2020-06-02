@@ -26,10 +26,11 @@
     "build:watch:flow": "yarn flow-copy-source --verbose -w -i '**/__tests__/**' src lib"
   },
   "dependencies": {
-    "@txo/functional": "^1.0.0",
+    "@txo/functional": "^3.1.0",
+    "@txo/log": "^1.0.0",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
-    "@txo-peer-dep/log": "^1.0.1"
+    "@txo-peer-dep/log": "^3.0.0"
   }
 }
