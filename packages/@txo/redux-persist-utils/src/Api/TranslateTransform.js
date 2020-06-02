@@ -8,7 +8,7 @@
 
 import { translateOnPath } from '@txo/functional'
 import get from 'lodash.get'
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 
 import type { PathTranslate, TranslateMode } from './Types'
 import { translateModes } from './Types'
