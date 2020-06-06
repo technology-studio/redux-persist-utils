@@ -6,7 +6,7 @@
  * @flow
  */
 
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 
 import type { PathTranslate } from './Types'
 import { translateModes } from './Types'

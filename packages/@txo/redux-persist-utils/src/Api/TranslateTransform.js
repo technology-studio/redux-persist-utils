@@ -8,7 +8,7 @@
 
 import { translateOnPath } from '@txo/functional'
 import get from 'lodash.get'
-import { Log } from '@txo-peer-dep/log'
+import { Log } from '@txo/log'
 
 import type { PathTranslate, TranslateMode } from './Types'
 import { translateModes } from './Types'
@@ -19,7 +19,7 @@ export const createTranslateTransform = (
   rootReducerKey: string,
   inboundPathTranslateList: ?PathTranslate[],
   outboundPathTranslateList: ?PathTranslate[],
-  translateMode: TranslateMode = translateModes.WHITELIST
+  translateMode: TranslateMode = translateModes.WHITELIST,
 ) => ({
   in: <STATE: Object>(state: STATE, key: string): $Shape<STATE> =>
     rootReducerKey === key && inboundPathTranslateList ? translateTransform(state, inboundPathTranslateList, translateMode) : state,
