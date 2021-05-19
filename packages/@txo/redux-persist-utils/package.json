@@ -31,6 +31,6 @@
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
-    "@txo-peer-dep/log": "^3.0.0"
+    "@txo-peer-dep/log": "^4.0.0"
   }
 }
