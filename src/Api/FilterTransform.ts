@@ -18,14 +18,17 @@ import { createTranslateTransform } from './TranslateTransform'
 
 const log = new Log('txo.redux-persist-utils.Api.FilterTransform')
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const _createBlacklistFilterTransform = (rootReducerKey: string, pathTranslateList: PathTranslate<any>[]): TranslateTransform => {
   log.debug('CREATE BLACKLIST FILTER TRANSFORM', { rootReducerKey, pathTranslateList })
   return createTranslateTransform(rootReducerKey, pathTranslateList, pathTranslateList, TranslateMode.BLACKLIST)
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Value = boolean | '*' | Translate<any> | null
 type Node = Record<string, Value>
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const _populateFilterPathTranslateList = (node: Node): PathTranslate<any>[] => Object.keys(node).reduce((result: PathTranslate<any>[], key) => {
   const value = node[key]
   if (value === null) {
@@ -59,7 +62,7 @@ export const createBlacklistFilterTransformList = (filter: Record<string, Node>)
   const keys: string[] = Object.keys(filter)
   const filterTransformList = keys.reduce<TranslateTransform[]>((result, module) => {
     const pathTranslateList = _populateFilterPathTranslateList(filter[module])
-    if (pathTranslateList.length) {
+    if (pathTranslateList.length > 0) {
       result.push(_createBlacklistFilterTransform(module, pathTranslateList))
     }
     return result
