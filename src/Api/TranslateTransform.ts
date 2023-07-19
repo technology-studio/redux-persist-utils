@@ -64,10 +64,9 @@ const translateTransform = <STATE extends Record<string, unknown>>(state: STATE,
 
     case TranslateMode.BLACKLIST:
       return pathTranslateList.reduce((resultState: Partial<STATE>, pathTranslate: PathTranslate<Partial<STATE>>) => {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const _resultState: any = translateOnPath(pathTranslate.path, resultState, pathTranslate.translate, { keepEmptyObjects: true, ignoreMissingPath: true }) ?? {}
+        const _resultState = translateOnPath(pathTranslate.path, resultState, pathTranslate.translate, { keepEmptyObjects: true, ignoreMissingPath: true }) ?? {}
         log.debug(`PathTranslate: ${pathTranslate.path}`, { pathTranslate, resultState, _resultState })
-        return _resultState
+        return _resultState as Partial<STATE>
       }, state)
   }
 }
