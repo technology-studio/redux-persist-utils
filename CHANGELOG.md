@@ -1,3 +1,10 @@
+## [3.0.9](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.8...v3.0.9) (2023-07-21)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/functional to ^4.6.4 ([affae7b](https://github.com/technology-studio/redux-persist-utils/commit/affae7b6f07d30def0b103850a4350a3cc53cea6))
+
 ## [3.0.8](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.7...v3.0.8) (2023-07-21)
 
 
