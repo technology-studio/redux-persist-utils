@@ -1684,6 +1684,13 @@
   dependencies:
     "@txo/functional" "^4.6.7"
 
+"@txo/log@^2.0.9":
+  version "2.0.9"
+  resolved "https://registry.yarnpkg.com/@txo/log/-/log-2.0.9.tgz#53916baa5d4486fb1ce9f12073218137235bbd70"
+  integrity sha512-7stPRoqEPmyFqIzgnaTMDCxlKY6/ifcSW2aahaLn3FOg0panR3mCFJsjpsBi0+amGVNgqiegW/y+DdSYlvKv0Q==
+  dependencies:
+    "@txo/functional" "^4.6.8"
+
 "@types/babel__core@^7.1.14":
   version "7.1.19"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.19.tgz#7b497495b7d1b4812bdb9d02804d0576f43ee460"
