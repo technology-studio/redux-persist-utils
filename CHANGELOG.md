@@ -1,3 +1,10 @@
+## [3.0.26](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.25...v3.0.26) (2023-09-20)
+
+
+### Bug fixes
+
+* recreate yarn.lock ([#383](https://github.com/technology-studio/redux-persist-utils/issues/383)) ([ab17a38](https://github.com/technology-studio/redux-persist-utils/commit/ab17a38aa5787a2f43e3339049577be563772dbe))
+
 ## [3.0.25](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.24...v3.0.25) (2023-08-10)
 
 
