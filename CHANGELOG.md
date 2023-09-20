@@ -1,3 +1,10 @@
+## [3.0.27](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.26...v3.0.27) (2023-09-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo-peer-dep/log to ^4.0.2 ([81da402](https://github.com/technology-studio/redux-persist-utils/commit/81da402a0f9974dfcce47e4704dd9e5841bea792))
+
 ## [3.0.26](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.25...v3.0.26) (2023-09-20)
 
 
