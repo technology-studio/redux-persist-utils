@@ -1,3 +1,10 @@
+## [3.0.28](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.27...v3.0.28) (2023-09-20)
+
+
+### Bug fixes
+
+* **deps:** update dependency @txo/log to ^2.0.13 ([163322c](https://github.com/technology-studio/redux-persist-utils/commit/163322c46933308af8881758783b658bfb32dbae))
+
 ## [3.0.27](https://github.com/technology-studio/redux-persist-utils/compare/v3.0.26...v3.0.27) (2023-09-20)
 
 
