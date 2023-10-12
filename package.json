@@ -73,10 +73,5 @@
     "semantic-release-slack-bot": "^4.0.2",
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
