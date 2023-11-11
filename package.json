@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@txo/functional": "^4.6.16",
-    "@txo/log": "^2.0.13",
+    "@txo/log": "^2.0.14",
     "lodash.get": "^4.4.2"
   },
   "peerDependencies": {
